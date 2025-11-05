@@ -1,16 +1,126 @@
-# React + Vite
+# 🚨 PathMedic: Ambulance Dispatch Simulation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React + Vite application that visualizes and simulates real-time ambulance dispatch in a city using Dijkstra's shortest path algorithm. Designed for education, demonstration, and practical graph theory applications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- **Interactive City Map:** 20 interconnected locations, animated SVG visualization
+- **Ambulance Fleet:** 4 ambulances, real-time status, mission tracking
+- **Emergency Call System:** Multiple severity levels, priority-based dispatch
+- **Smart Dispatch:** Dijkstra's algorithm finds optimal ambulance routes
+- **Hospital Network:** 3 hospitals, nearest hospital transport simulation
+- **Statistics Dashboard:** Total calls, completed missions, active units, average response time
+- **Animated UI:** Beautiful gradients, blobs, custom scrollbars, and SVG effects
+- **Legend & Active Dispatches:** Footer shows map legend and ongoing missions
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+> Add screenshots here to showcase the UI and features.
+
+---
+
+## Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or newer recommended)
+- npm (comes with Node.js)
+
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/tanishsri445-beep/PathMedic.git
+   cd ambulance-dispatch
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+4. **Open in browser:**
+   Visit [http://localhost:5173](http://localhost:5173) (or as shown in terminal)
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+---
+
+## Project Structure
+
+```
+ambulance-dispatch/
+├── public/                # Static assets
+├── src/
+│   ├── App.jsx            # Main application logic
+│   ├── main.jsx           # React entry point
+│   ├── App.css            # Custom styles
+│   ├── index.css          # Tailwind base
+│   └── assets/            # SVGs and images
+├── index.html             # HTML shell
+├── package.json           # Dependencies and scripts
+├── vite.config.js         # Vite configuration
+├── tailwind.config.js     # Tailwind configuration
+├── postcss.config.js      # PostCSS configuration
+├── eslint.config.js       # ESLint configuration
+└── README.md              # Project documentation
+```
+
+---
+
+## Technologies Used
+- **React** (UI library)
+- **Vite** (build tool)
+- **Tailwind CSS** (utility-first styling)
+- **Lucide React** (icon library)
+- **SVG** (map visualization)
+- **ESLint** (code linting)
+
+---
+
+## How It Works
+- **Emergency calls** are generated with random location, severity, and type.
+- **Ambulances** are dispatched to the highest priority call using Dijkstra's algorithm for shortest path.
+- **Animated routes** show ambulance movement on the map.
+- **After pickup**, the patient is transported to the nearest hospital.
+- **Statistics** update in real time.
+
+---
+
+## Customization
+- Change city nodes, roads, ambulances, or hospitals in `App.jsx`.
+- Adjust styles in `App.css` or `index.css`.
+- Add new features or UI components as needed.
+
+---
+
+## References
+- Dijkstra, E. W. (1959). A note on two problems in connexion with graphs. Numerische Mathematik, 1, 269–271.
+- React Documentation: https://react.dev/
+- Lucide React: https://lucide.dev/
+- Tailwind CSS: https://tailwindcss.com/docs
+- SVG Specification: https://www.w3.org/TR/SVG11/
+- World Health Organization: Emergency Medical Services
+- MIT OpenCourseWare: Graph Theory and Network Optimization
+
+---
+
+## License
+This project is for educational and demonstration purposes.
+
+---
+
+## Author
+- [tanishsri445-beep](https://github.com/tanishsri445-beep)
