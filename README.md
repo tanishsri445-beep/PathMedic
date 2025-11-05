@@ -17,11 +17,7 @@ A modern React + Vite application that visualizes and simulates real-time ambula
 
 ---
 
-## Screenshots
 
-> Add screenshots here to showcase the UI and features.
-
----
 
 ## Getting Started
 
